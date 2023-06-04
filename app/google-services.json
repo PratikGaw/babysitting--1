@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174068883765",
+    "project_id": "babysitting-57863",
+    "storage_bucket": "babysitting-57863.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174068883765:android:e6cd9a7cd43734b7932c7c",
+        "android_client_info": {
+          "package_name": "project.chetankoli.babysiting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174068883765-nqii0n2gl79k88dsd1u4suqaq39simj4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVtofDCuT0wbv5cEuHwnBJ9_Q8YQSuHs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174068883765-nqii0n2gl79k88dsd1u4suqaq39simj4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

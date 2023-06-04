@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background_color"
+    android:layout_height="match_parent"
+    tools:context=".RatingActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_marginTop="15dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="9dp"
+        app:cardMaxElevation="9dp"
+        android:elevation="9dp"
+        app:cardCornerRadius="9dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <EditText
+                android:gravity="center"
+                android:id="@+id/edtFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_top_buttons"
+                android:lines="10"
+                android:padding="10dp"
+                android:hint="Enter Your Feedback"/>
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:rating="5.0"
+                android:progressTint="#FFEB3B"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_gravity="end"
+                android:id="@+id/btnRatingAndFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Feedback"
+                android:backgroundTint="#FFEB3B"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <soup.neumorphism.NeumorphTextView
+        android:visibility="gone"
+        android:id="@+id/txtThanks"
+        android:layout_marginTop="20dp"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/background_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card1"
+        android:text="Thank You!"/>
+    <ProgressBar
+        android:id="@+id/pb"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card1"
+        android:layout_marginTop="20dp"
+        android:progressTint="#FFEB3B"
+        />
+
+
+</RelativeLayout>

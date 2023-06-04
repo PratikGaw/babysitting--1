@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/toolbar"
+        >
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="loading..."
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/btnBook"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:background="@drawable/shape_top_buttons"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_toStartOf="@+id/btnBook"
+            android:clickable="true"
+            android:id="@+id/btnRating"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating"
+            android:background="@drawable/shape_top_buttons"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/sendMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/row_message"
+        android:id="@+id/rvMessage"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/sendMessageLayout">
+
+        <EditText
+            android:layout_toLeftOf="@+id/btnSendMessage"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Message"
+            android:id="@+id/edtMessage"
+            android:padding="15dp"
+            />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_send_24"
+            android:id="@+id/btnSendMessage"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

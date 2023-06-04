@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".OnBoardingActivity">
+    <TextView
+        android:id="@+id/one"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="Welcome User"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_above="@+id/txOldUser"
+        android:layout_below="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnUser"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="120dp"
+            android:textSize="16dp"
+            android:text="I am User"
+            android:textColor="@color/text_color"
+            style="@style/Widget.Neumorph.Button">
+        </soup.neumorphism.NeumorphButton>
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btnBabySitter"
+            android:layout_marginTop="50dp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="120dp"
+            android:textSize="16dp"
+            android:text="I am BabySitter"
+            android:textColor="@color/text_color"
+            style="@style/Widget.Neumorph.Button">
+        </soup.neumorphism.NeumorphButton>
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txOldUser"
+        android:layout_width="wrap_content"
+        android:text="Already Registrated? Login"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/text_color"
+        android:layout_marginStart="10dp"/>
+
+</RelativeLayout>

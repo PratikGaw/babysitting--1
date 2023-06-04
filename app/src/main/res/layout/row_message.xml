@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/msgLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color">
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/card1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:neumorph_shapeType="basin"
+        >
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="loading..."
+            />
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+</RelativeLayout>
